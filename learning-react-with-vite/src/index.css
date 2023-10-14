@@ -55,6 +55,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.board-row{
+  
+}
+
+.square {
+  border-radius: 0;
+  border: 1px solid #000;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #3d88798e;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

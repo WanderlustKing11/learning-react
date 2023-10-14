@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
+import TicTacToe from './components/TicTacToe';
+
 const user = {
   name: 'Master Chief',
   imageUrl:
@@ -58,9 +60,9 @@ function App() {
       </div>
       <div className='card'>
         <MyButton />
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      </div>
+      <div>
+        <TicTacToe />
       </div>
       <p className='read-the-docs'>
         Click on the Vite and React logos to learn more
