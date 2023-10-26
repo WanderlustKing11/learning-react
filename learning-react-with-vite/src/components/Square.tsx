@@ -1,7 +1,16 @@
-export default function Square({ value }) {
+
+type SquareProps = {
+  value: number | string | null;
+  onSquareClick: () => void;
+};
+
+export default function Square({ value, onSquareClick }: SquareProps) {
   return (
     <>
-      <button className='square'>{ value }</button>
+      <button 
+        className='square'
+        onClick={onSquareClick}
+      >{value}</button>
     </>
-  )
+  );
 }
